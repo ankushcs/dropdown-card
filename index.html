@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>dropdown crad menu</title>
+</head>
+
+<body>
+    <div class="card" id="cardElement">
+        <div class="content">
+            <div class="image-tag">
+                <img
+                    src="https://media-exp1.licdn.com/dms/image/C5603AQHvIdM2Bebzxg/profile-displayphoto-shrink_800_800/0/1626803771751?e=1635379200&v=beta&t=MTReNZ_W90CGJj_g7WtT_BYyoft91EJIrNGBk8NlHHs">
+            </div>
+            <h2>Ankush Singh<br><span>Website Developer</span></h2>
+        </div>
+        <ul class="navigation">
+            <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <ion-icon name="person-outline"></ion-icon>
+                    My linkedIn Profile
+                </a>
+            </li>
+            <li>
+                <a href="https://mail.google.com/mail" target="_blank">
+                    <ion-icon name="chatbox-outline"></ion-icon>
+                    Email Me
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="settings-outline"></ion-icon>
+                    Setting
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    Support
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+        <div class="toggle" id="toggleElement">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+    </div>
+
+    <script>
+        let cardContainer = document.getElementById("cardElement");
+        let toggleButtonElement = document.getElementById("toggleElement");
+
+        toggleButtonElement.onclick = function () {
+            toggleButtonElement.classList.toggle("active");
+            cardContainer.classList.toggle("active");
+        };
+    </script>
+</body>
+
+</html>
